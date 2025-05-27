@@ -1,0 +1,4 @@
+{
+  "path_to_model": "neural/models/yolo11n.onnx",
+  "server_url": "http://127.0.0.1:8000/websocket/connect_neural"
+}
