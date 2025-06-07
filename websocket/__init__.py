@@ -1,2 +1,2 @@
-from websocket.base import WebsocketConnect
-from websocket.server_connect import ServerConnect
+from websocket.base import WebsocketConnector
+from websocket.neural_connect import NeuralConnector

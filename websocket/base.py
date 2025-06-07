@@ -4,7 +4,7 @@ import asyncio
 from websockets import ConnectionClosed, connect, ClientConnection
 
 
-class WebsocketConnect(abc.ABC):
+class WebsocketConnector(abc.ABC):
     def __init__(self, link: str):
         self.__link = link
         self.__websocket: ClientConnection | None = None
