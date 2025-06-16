@@ -1,4 +1,4 @@
 {
   "path_to_model": "neural/models/model.pt",
-  "server_url": "ws://127.0.0.1:8000/websocket/connect_neural"
+  "server_url": "ws://207.180.227.75:8000/websocket/connect_neural"
 }
