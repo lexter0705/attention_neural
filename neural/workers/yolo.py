@@ -14,6 +14,6 @@ class YOLOWorker(NeuralWorker):
         self.__model.to(device)
 
     def detect(self, image: np.ndarray) -> list[Label]:
-        predict = self.__model.predict(source=image)
+        predict = self.__model.predict(source=image, conf=0.1)
         labels = [Label(self.__model.names[box.cls.tolist()[0]], box.xyxy.tolist()[0], box.conf.tolist()[0]) for box in predict[0].boxes]
         return labels
